@@ -1,1 +1,40 @@
-Hello
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>Weather app</header>
+    <div class="container">
+        <div class="enter">
+            <input type="text" name="" class="city-enter" placeholder="Enter a City.....">
+            <button type="submit" class="btn-submit">Submit</button>
+        </div>
+        <div class="weather">
+            <div class="info">
+                <h3 class="city">Barueri</h3>
+                <h2 class="temp">28°C</h2>
+                <p class="weather-img">imagem</p>
+                <h3 class="weather-info">clean</h3>
+            </div>
+            <div class="info">
+                <h3 class="city">Barueri</h3>
+                <h2 class="temp">28°C</h2>
+                <p class="weather-img">imagem</p>
+                <h3 class="weather-info">clean</h3>
+            </div>
+            <div class="info">
+                <h3 class="city">Barueri</h3>
+                <h2 class="temp">28°C</h2>
+                <p class="weather-img">imagem</p>
+                <h3 class="weather-info">clean</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
