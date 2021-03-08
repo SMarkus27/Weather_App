@@ -1,0 +1,78 @@
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #e1e1e1;
+}
+input,button{
+    outline-style: none;
+
+}
+header{
+    height: 60px;
+    background: #166fe5;
+    font-size: 33px;
+    padding: 15px;
+    color: cornsilk;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.enter{
+    display: flex;
+}
+.city-enter{
+    width: 350px;
+    height: 40px;
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-style: none;
+}
+.btn-submit{
+    height: 40px;
+    width: 90px;
+    padding: 10px;
+    font-size: 18px;
+    background: #36a420;
+    color:#ffd;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+ 
+}
+
+.info{
+    margin-top: 90px;
+    background: #fff;
+    margin-right: 20px;
+    padding: 20px 50px 20px 20px;
+}
+.city, .weather-info{
+    font-size: 28px;
+}
+.weather-img{
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+.temp{
+    font-size: 40px;
+}
+.weather{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+@media screen and (max-width:800px){
+    .city-enter{
+        width: 75%;
+    }
+}
