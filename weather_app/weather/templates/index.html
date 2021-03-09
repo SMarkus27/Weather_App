@@ -5,35 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '/style.css' %}">
+    <link rel="stylesheet" href="{% static '/style/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Weather App</title>
 </head>
 <body>
     <header>Weather app</header>
     <div class="container">
         <div class="enter">
-            <input type="text" name="" class="city-enter" placeholder="Enter a City.....">
-            <button type="submit" class="btn-submit">Submit</button>
+            <form action="" method="post">{% csrf_token %}
+                <input type="text" name="city" class="city-enter" placeholder="Enter a City.....">
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
         </div>
         <div class="weather">
-            <div class="info">
-                <h3 class="city">Barueri</h3>
-                <h2 class="temp">28°C</h2>
-                <p class="weather-img">imagem</p>
-                <h3 class="weather-info">clean</h3>
-            </div>
-            <div class="info">
-                <h3 class="city">Barueri</h3>
-                <h2 class="temp">28°C</h2>
-                <p class="weather-img">imagem</p>
-                <h3 class="weather-info">clean</h3>
-            </div>
-            <div class="info">
-                <h3 class="city">Barueri</h3>
-                <h2 class="temp">28°C</h2>
-                <p class="weather-img">imagem</p>
-                <h3 class="weather-info">clean</h3>
-            </div>
+            {% for info in weather_data  %}
+                <div class="info">
+                    <form action="delete" method="post"> {% csrf_token %}
+                        <div class="city">
+                            <h3>{{info.city.capitalize}}</h3>
+                            <a href="delete/{{info.city}}"> <i class="del fas fa-times"></i></a>
+                        </div>
+                    </form>
+                    <h2 class="temp">{{info.temp}}°C</h2>
+                    <img class="weather-img" src="http://openweathermap.org/img/w/{{info.icon}}.png">
+                    <h3 class="weather-info">{{info.description.capitalize}}</h3>
+                </div>
+
+            {% endfor %}
+            
         </div>
     </div>
 </body>
