@@ -59,16 +59,30 @@ header{
 .city, .weather-info{
     font-size: 28px;
 }
+
 .weather-img{
     padding-bottom: 10px;
-    font-size: 40px;
+    height: 100px;
+    width: 100px;
 }
 .temp{
-    font-size: 40px;
+    padding-top: 15px;
+    font-size: 34px;
+    color: #222;
 }
 .weather{
     display: flex;
     flex-wrap: wrap;
+}
+.city{
+    display: flex;
+    justify-content: space-between;
+}
+i{
+    font-size: 20px;
+    background: none;
+    color: red;
+    margin-left: 50px;
 
 }
 @media screen and (max-width:800px){
