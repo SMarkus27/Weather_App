@@ -1,40 +1,40 @@
 <p align="center">
   <img align='center' src="./assets/SMarkus.png" height="300">
 </p>
-<h1 align='center'>🚀 Uma aplicação de previsão de clima 🚀 </h1>
-Uma aplicação feita com django/python, utilizando a API do site https://openweathermap.org/, onde podemos pesquisar por qualquer cidade do mundo e descobrir as condições climaticas da cidade naquele momento.
+<h1 align='center'>🚀 A Weather app 🚀 </h1>
+An application django/python, used the API site https://openweathermap.org/, we can search any city in the world and find out how the weather is there.
 <h2>Layout</h2>
   <img align='center' src="./assets/weather.png" height="300">
-<h2>Como Executar o projeto 🚀</h2>
+<h2>How to run this repo: 🚀</h2>
 
 ```bash
 
-# Clone este repositório
+# Clone this repo
 $ git clone git@github.com:SMarkus27/Weather_App.git
 
-# Acesse a pasta do projeto no terminal/cmd
+# Open the project folder in the terminal/cmd
 $ cd Weather_App
 
-# Vá para a pasta weather_app
+# Open the weather_app folder
 $ cd weather_app
 
-# Execute o comando para a criação de um ambiente virtual:
+# Run the command to create a virtualenv:
 $ python -m pip venv weather
 
-# Ative sua venv:
+# Activate the venv:
 $ source weathero/bin/activate
 
-# Instale as dependencias que estão no arquivo requeriments.txt na pasta ToDO.
+# Install all dependencies in the requeriments.txt file.
 $ pip install -r requeriments.txt
 
-# Execute o comando para ativar a aplicação:
+# Run the command to activate the application:
 $ python manage.py runserver
 
-# O servidor inciará na porta:8000 - acesse http://127.0.0.1:8000 
+# The server starts at the port:8000 - go to http://127.0.0.1:8000 
 
 ```
 
-<h2>Tecnologias usadas</h2>
+<h2>Tech Stack:</h2>
 <ul>
   <li>HTML5</li>
   <li>CSS3</li>
@@ -44,8 +44,8 @@ $ python manage.py runserver
   <li>SQLite</li>
   
 </ul>
- 📝 Licença
+ 📝 License
 
-Este projeto esta sobe a licença [MIT](./LICENSE).
+This project is under license [MIT](./LICENSE).
 
-Feito  por Marcus Vinicius 👋🏽 [Entre em contato!](https://www.linkedin.com/in/marcus-vinicius-campos=pereira)
+Made by Marcus Vinicius 👋🏽 [Get in touch!](https://www.linkedin.com/in/marcus-vinicius-campos=pereira)
