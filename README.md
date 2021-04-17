@@ -1,11 +1,10 @@
 <p align="center">
   <img align='center' src="./assets/SMarkus.png" height="300">
 </p>
-<h1 align='center'>🚀 Um todo em Django 🚀 </h1>
-Um todo feito com django/python, realizando CRUD de tarefas.
+<h1 align='center'>🚀 Uma aplicação de previsão de clima 🚀 </h1>
+Uma aplicação feita com django/python, utilizando a API do site https://openweathermap.org/, onde podemos pesquisar por qualquer cidade do mundo e descobrir as condições climaticas da cidade naquele momento.
 <h2>Layout</h2>
-  <img align='center' src="./assets/todo1.png" height="300">
-  <img align='center' src="./assets/todo2.png" height="350" >
+  <img align='center' src="./assets/weather.png" height="300">
 <h2>Como Executar o projeto 🚀</h2>
 
 ```bash
@@ -14,16 +13,16 @@ Um todo feito com django/python, realizando CRUD de tarefas.
 $ git clone git@github.com:SMarkus27/Weather_App.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd Django-ToDo
+$ cd Weather_App
 
-# Vá para a pasta ToDo
-$ cd ToDo
+# Vá para a pasta weather_app
+$ cd weather_app
 
 # Execute o comando para a criação de um ambiente virtual:
-$ python -m pip venv todo
+$ python -m pip venv weather
 
 # Ative sua venv:
-$ source todo/bin/activate
+$ source weathero/bin/activate
 
 # Instale as dependencias que estão no arquivo requeriments.txt na pasta ToDO.
 $ pip install -r requeriments.txt
@@ -50,12 +49,3 @@ $ python manage.py runserver
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
 Feito  por Marcus Vinicius 👋🏽 [Entre em contato!](https://www.linkedin.com/in/marcus-vinicius-campos=pereira)
-
-
-
-
-# Weather_App
-
-Show the weather in a chosen city.<br>
-Uses the API OpenWeathermap.<br>
-JSON Manipulation.
